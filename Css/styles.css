@@ -169,3 +169,7 @@ p{
 a{
   text-decoration: none;
 }
+
+.titulo{
+  transform: translateY(-120%);
+}
