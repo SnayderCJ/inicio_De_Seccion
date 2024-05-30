@@ -22,7 +22,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 10px 30px #000000;
-  width: 300px;
+  width: 500px;
   text-align: center;
   justify-content: center;
   z-index: 2;
@@ -38,13 +38,16 @@ h2 {
   position: relative;
   margin: 20px 0 40px;
   width: 190px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .form-control input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px #fff solid;
-  display: block;
+  /* display: block; */
   width: 100%;
   padding: 15px 0;
   font-size: 18px;
@@ -54,7 +57,7 @@ h2 {
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
-  border-bottom-color: lightblue;
+  border-bottom-color: rgb(140, 33, 228);
 }
 
 .form-control label {
@@ -74,7 +77,7 @@ h2 {
 
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-  color: lightblue;
+  color: rgb(140, 33, 228);
   transform: translateY(-30px);
 }
 
