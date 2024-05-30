@@ -37,7 +37,7 @@ h2 {
 .form-control {
   position: relative;
   margin: 20px 0 40px;
-  width: 190px;
+  width: 50%;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -87,7 +87,7 @@ button {
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
-  border: 1px solid rgb(61, 106, 255);
+  border: 1px solid rgb(140, 33, 228);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -102,8 +102,8 @@ button {
 }
 
 button:hover {
-  background: rgb(61, 106, 255);
-  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  background: rgb(140, 33, 228);
+  box-shadow: 0 0 30px 5px rgb(133, 38, 211);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
