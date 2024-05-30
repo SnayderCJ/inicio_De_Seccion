@@ -10,9 +10,32 @@
     <div class="container" id="register-container" style="display: none;">
         <h2> Registrar </h2>
 
-        <input type="text" id="register-username" class="input" placeholder="Nombre de Usuario">
-        <input type="password" id="register-password" class="input" placeholder="Contraseña">
-        <input type="password" id="register-confirm-password" class="input" placeholder="Confirmar Contraseña">
+        <div class="form-control">
+            <input type="text" id="register-username" required>
+            <label>
+                <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">b</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">e</span>
+                <span style="transition-delay:300ms">d</span><span style="transition-delay:350ms">e</span>
+                <span style="transition-delay:400ms">U</span><span style="transition-delay:450ms">s</span><span style="transition-delay:500ms">u</span><span style="transition-delay:550ms">a</span><span style="transition-delay:600ms">r</span><span style="transition-delay:650ms">i</span><span style="transition-delay:700ms">o</span>
+            </label>
+        </div>
+    
+        <div class="form-control">
+            <input type="password" id="register-password" required>
+            <label>
+                <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">t</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">s</span><span style="transition-delay:350ms">e</span><span style="transition-delay:400ms">ñ</span><span style="transition-delay:450ms">a</span>
+            </label>
+        </div>
+    
+        <div class="form-control">
+            <input type="password" id="register-confirm-password" required>
+            <label>
+                <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">f</span><span style="transition-delay:200ms">i</span><span style="transition-delay:250ms">r</span><span style="transition-delay:300ms">m</span>
+                <span style="transition-delay:350ms">a</span><span style="transition-delay:400ms">r</span>
+                <span style="transition-delay:450ms">C</span><span style="transition-delay:500ms">o</span><span style="transition-delay:550ms">n</span><span style="transition-delay:600ms">t</span><span style="transition-delay:650ms">r</span><span style="transition-delay:700ms">a</span><span style="transition-delay:750ms">s</span><span style="transition-delay:800ms">e</span><span style="transition-delay:850ms">ñ</span><span style="transition-delay:900ms">a</span>
+            </label>
+        </div>
+
+
         <button class="button" onclick="register()"> Registrar</button>
         <div id="register-error-message" class="error-message"></div>
         <p>¿Ya tienes una cuenta? <a href="#" onclick="showLogin()">Inicia sesión aquí</a></p>
@@ -21,9 +44,25 @@
     <div class="container" id="login-container">
         <h2> Iniciar Sesión</h2>
 
-        <input type="text" id="login-username" class="input" placeholder="Nombre de Usuario">
-        <input type="password" id="login-password" class="input" placeholder="Contraseña">
+        <div class="form-control">
+            <input type="text" id="login-username" required>
+            <label>
+                <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">b</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">e</span>
+                <span style="transition-delay:300ms">d</span><span style="transition-delay:350ms">e</span>
+                <span style="transition-delay:400ms">U</span><span style="transition-delay:450ms">s</span><span style="transition-delay:500ms">u</span><span style="transition-delay:550ms">a</span><span style="transition-delay:600ms">r</span><span style="transition-delay:650ms">i</span><span style="transition-delay:700ms">o</span>
+            </label>
+        </div>
+    
+        <div class="form-control">
+            <input type="password" id="login-password" required>
+            <label>
+                <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">t</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">s</span><span style="transition-delay:350ms">e</span><span style="transition-delay:400ms">ñ</span><span style="transition-delay:450ms">a</span>
+            </label>
+        </div>
+
         <button class="button" onclick="login()"> Ingresar </button>
+
+        <br><br>
         <div id="login-error-message" class="error-message"> Usuario o contraseña incorrecta</div>
         <p> ¿No tienes una cuenta? <a href="#" onclick="showRegister()"> Regístrate aquí </a></p>
     </div>
