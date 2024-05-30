@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Inicio De Seccion </title>
+    <link rel="stylesheet" href="./Css/styles.css">
 </head>
 <body>
-     
+    <div class="container" id="register-container">
+        <h2> Registrar </h2>
+
+        <input type="text" id="register-username" class="input" placeholder="Nombre de Usuario">
+        <input type="text" id="register-lastUsername" class="input" placeholder="Apellido de Usuario">
+        <input type="password" id="register-password" class="input" placeholder="Contraseña">
+        <input type="password" id="register-confirm-password" class="input" placeholder="Confirmar Contraseña">
+        <button class="button" onclick="register()"> Registrar</button>
+        <div id="register-error-message" class="error-message"></div>
+        <p> ¿No tienes una cuenta? <a href="#" onclick="showRegister()"> Regístrate aquí </a></p>
+    </div>
+
+    <div class="container" id="login-container">
+        
+    </div>
 </body>
 </html>
+
+
+
+<!-- <div class="container" id="login-container">
+    <h2>Inicio de Sesión</h2>
+    <input type="text" id="login-username" class="input-field" placeholder="Nombre de usuario" />
+    <input type="password" id="login-password" class="input-field" placeholder="Contraseña" />
+    <button class="button" onclick="login()">Ingresar</button>
+    <div id="login-error-message" class="error-message">Usuario o contraseña incorrectos</div>
+    <p>¿No tienes una cuenta? <a href="#" onclick="showRegister()">Regístrate aquí</a></p>
+</div>
+
+<div class="container" id="register-container" style="display:none;">
+    <h2>Registro</h2>
+    <input type="text" id="register-username" class="input-field" placeholder="Nombre de usuario" />
+    <input type="password" id="register-password" class="input-field" placeholder="Contraseña" />
+    <input type="password" id="register-confirm-password" class="input-field" placeholder="Confirmar contraseña" />
+    <button class="button" onclick="register()">Registrar</button>
+    <div id="register-error-message" class="error-message"></div>
+    <p>¿Ya tienes una cuenta? <a href="#" onclick="showLogin()">Inicia sesión aquí</a></p>
+</div> -->
