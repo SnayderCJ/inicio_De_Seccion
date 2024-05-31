@@ -29,8 +29,15 @@ body {
 }
 
 h2 {
-  margin-bottom: 40px;
-  color: #fff;
+  color: #fff; /* White color */
+  font-size: 40px;
+  text-shadow: 0 0 10px #ffffffc2, 0 0 15px #ffffffc2, 0 0 20px #ffffffc2; /* Text shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.titulo {
+  transform: translateY(-90px); 
+  margin-bottom: 20px; 
 }
 
 
@@ -168,8 +175,4 @@ p{
 
 a{
   text-decoration: none;
-}
-
-.titulo{
-  transform: translateY(-120%);
 }
