@@ -34,12 +34,13 @@ Aplicación web simple para registrar e iniciar sesión, construida con tecnolog
 
 ### 📁 Estructura del Proyecto
 
-
+``` bash
 ├── index.html
 ├── Css/
 │   └── styles.css
 └── JavaScript/
     └── main.js
+```
 
 ### ⚠️ Importante
 
