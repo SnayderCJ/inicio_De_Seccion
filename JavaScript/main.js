@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const registerContainer = document.getElementById('register-container')
-    const loginContainer = document.getElementById('login-container')
-    const registerErrorMessage = document.getElementById('register-error-message')
-    const loginErrorMessage = document.getElementById('login-errror-message')
+    const registerContainer = document.getElementById('register-container');
+    const loginContainer = document.getElementById('login-container');
+    const registerErrorMessage = document.getElementById('register-error-message');
+    const loginErrorMessage = document.getElementById('login-errror-message');
 
     const showRegister = () => {
-        registerContainer.style.display = 'block'
+        registerContainer.style.display = 'block';
         loginContainer.style.display = 'none';
         registerErrorMessage.innerText = '';
         loginErrorMessage.innerText = '';
-    }
+    };
 
     const showLogin = () => {
         registerContainer.style.display = 'none';
         loginContainer.style.display = 'block';
         registerErrorMessage.innerText = '';
         loginErrorMessage.innerText = '';
-    }
+    };
 
     window.showRegister = showRegister;
     window.showLogin = showLogin;
@@ -31,24 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+
+        registerErrorMessage.innerText = '¡Registrado exitosamente! Ahora puedes iniciar sesión.';
         console.log(`Registrado: ${username}`);
-        registerErrorMessage.innerText = 'Registrado exitosamente. Ahora puedes iniciar sesión.';
-    }
-    
+    };
 
     const login = () => {
         const username = document.getElementById('login-username').value;
         const password = document.getElementById('login-password').value;
 
-        if (username === "" || password === "") {
-            loginErrorMessage.innerText = 'Usuario o contraseña incorrecta';
-            return;
-        }
+        const storedUsername = localStorage.getItem('username');
+        const storedPassword = localStorage.getItem('password');
 
-        console.log(`Ingresado: ${username}`);
-        loginErrorMessage.innerText = 'Inicio de sesión exitoso. Redirigiendo...';
-    }
+        // Validar las credenciales
+        if (username === storedUsername && password === storedPassword) {
+            loginErrorMessage.innerText = '¡Inicio de sesión exitoso! Redirigiendo...';
+            console.log(`Ingresado: ${username}`);
+        } else {
+            loginErrorMessage.innerText = 'Usuario o contraseña incorrecta.';
+        }
+    };
 
     window.register = register;
     window.login = login;
-})
+});
